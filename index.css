@@ -25,6 +25,21 @@ body {
 
 /* HEADER */
 
+.logo-banner {
+    background-color: var(--bg-dark);
+    margin-top: 9rem;
+    width: 100%;
+    height: 8rem;
+}
+
+.logo-banner:last-of-type {
+    border-top-left-radius: 1rem;
+}
+
+.logo-banner:first-of-type {
+    border-top-right-radius: 1rem;
+}
+
 header {
     background-color: var(--bg-light);
     width: 100%;
@@ -52,9 +67,12 @@ header > section > img {
 
 #cards {
     width: 100%;
-    height: 28rem;
     display: flex;
+    margin-top: 15rem;
+    gap: 2rem;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #cards > .card-main_O {
@@ -66,11 +84,10 @@ header > section > img {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     background-color: var(--bg-cards);
-    width: 11rem;
-    height: 12rem;
+    height: 9rem;
     transition: var(--transition-soft);
     box-shadow: var(--box-shadow);
-    margin: 0 0.6rem;
+    margin: 0 4rem;
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -88,10 +105,6 @@ header > section > img {
 #cards > .card-main_O > p:first-of-type {
     font-size: 1rem;
     margin: 0.5rem 1rem;
-}
-
-#cards > .card-main_O:nth-of-type(2) {
-    margin-top: 14rem;
 }
 
 #cards > .card-main_O:hover {
@@ -113,7 +126,7 @@ header > section > img {
     width: 2rem;
     height: 1px;
     background-color: var(--accent-light);
-    margin: 1rem;
+    margin: 0.5rem;
     transition: var(--transition-soft);
 }
 
@@ -129,7 +142,7 @@ main > article:first-of-type {
     border: solid 1px var(--accent-light);
     padding: 0.5rem;
     border-radius: 0.5rem;
-    width: 25%;
+    width: 50%;
     cursor: pointer;
     transition: var(--transition-quick);
 }
@@ -137,4 +150,11 @@ main > article:first-of-type {
 #contact-btn:hover {
     border-color: var(--border-cards-light);
     color: var(--accent-light)
+}
+
+.line-h {
+    width: 100%;
+    height: 1px;
+    background-color: var(--accent-dark);
+    margin-bottom: 2rem;
 }
