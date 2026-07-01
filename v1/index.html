@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>L'Art du Fil</title>
+</head>
+
+<body>
+    <header>
+        <article class="logo-banner"></article>
+        <section>
+            <img src="img/logo.png" alt="Logo de L'Art du Fil">
+        </section>
+        <article class="logo-banner"></article>
+    </header>
+
+
+
+    <main>
+        <!-- SECTION I : CARDS -->
+        <section id="cards">
+            <article class="card-main_O">
+                <span class="line"></span>
+                <p>RETOUCHES</p>
+                <p>Ajustements et réparations sur mesure pour vos vêtements.</p>
+            </article>
+            <article class="card-main_O">
+                <span class="line"></span>
+                <p>BRODERIE</p>
+                <p>Motifs personnalisés brodés à la main ou à la machine.</p>
+            </article>
+            <article class="card-main_O">
+                <span class="line"></span>
+                <p>CREATIONS</p>
+                <p>Pièces uniques créées selon vos envies et mesures.</p>
+            </article>
+            <p>Le <span>soin</span> qu'un vêtement <span>mérite</span>.</p>
+        </section>
+
+        <div class="line-h"></div>
+
+        <!-- SECTION II -->
+        <section>
+            <article class="tag-container">
+                <span class="tag">Galerie</span>
+            </article>
+            <article id="beforeAfter">
+                <div id="container-b_a">
+                    <div id="img-container-b_a">
+                        <img src="img/after.png" alt="Image après" id="img-after" class="slider-image">
+                        <div id="image-before">
+                            <img src="img/before.png" alt="Image avant" id="img-before" class="slider-image">
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" id="slider-b_a"
+                        aria-label="Pourcentage de l'image d'avant montrée.">
+                    <div id="slider-line"></div>
+                    <div id="slider-btn" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            viewBox="0 0 256 256">
+                            <path
+                                d="M136,40V216a8,8,0,0,1-16,0V40a8,8,0,0,1,16,0ZM96,120H35.31l18.35-18.34A8,8,0,0,0,42.34,90.34l-32,32a8,8,0,0,0,0,11.32l32,32a8,8,0,0,0,11.32-11.32L35.31,136H96a8,8,0,0,0,0-16Zm149.66,2.34-32-32a8,8,0,0,0-11.32,11.32L220.69,120H160a8,8,0,0,0,0,16h60.69l-18.35,18.34a8,8,0,0,0,11.32,11.32l32-32A8,8,0,0,0,245.66,122.34Z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </article>
+            <article>
+                video here + couple of images
+            </article>
+            <article class="img-showdown" data-zoom="2">
+                <img src="img/9.png" alt="">
+                <div class="zoom-lens"></div>
+            </article>
+            <article class="img-showdown"></article>
+        </section>
+        <div class="line-h"></div>
+
+        <!-- SECTION III -->
+        <section>
+            <article class="tag-container">
+                <div class="tag"> Processus </div>
+            </article>
+            <article>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+                <div class="blocks"></div>
+            </article>
+        </section>
+    </main>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
