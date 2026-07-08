@@ -10,6 +10,8 @@
         --transition-soft: 1s ease;
         /* rapide */
         --transition-fast: 0.5s ease;
+        /* encore + rapide */
+        --transition-faster: 0.3s ease;
     
     /* Couleurs de marque */
         /* couleur de marque n°1 */
@@ -237,37 +239,61 @@ main > section:nth-of-type(1) > article:nth-of-type(2) > button:nth-of-type(1):h
 }
 
 /* ARTICLE VI */
-.logo-sect {
-    width: 200px;
-    height: 300px;
-    perspective: 1000px;
-}
-
-.logo-cont {
-    width: 100%;
-    height: 100%;
+article:nth-of-type(4) {
     position: relative;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
 }
 
-.logo-sect:hover .logo-cont {
-    transform: rotateY(180deg);
-}
-
-.front,
-.back {
+article:nth-of-type(4) > section > div {
     position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--charcoal-deep);
+    height: 19rem;
     width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
+    opacity: 0;
+    transition: var(--transition-fast);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-0-5);
+    padding: var(--size-1) var(--size-0);
 }
 
-.back {
-    transform: rotateY(180deg);
+article:nth-of-type(4) > section > div > p:nth-of-type(2) {
+    color: var(--gold-heavy);
 }
 
+.title-serv {
+    color: var(--gold);
+    font-family: var(--font-body);
+    font-size: var(--size-1-25);
+}
 
+article:nth-of-type(4) > section:nth-of-type(1) {
+    display: flex;
+    background-color: var(--charcoal);
+    justify-content: center;
+    align-items: center;
+    padding: var(--size-4) var(--size-1);
+    margin-top: var(--size-2);
+    cursor: pointer;
+}
+
+article:nth-of-type(4) > section:nth-of-type(1) > img {
+    transition: var(--transition-fast)
+}
+
+article:nth-of-type(4) > section:nth-of-type(1):hover > img {
+    opacity: 0;
+}
+
+article:nth-of-type(4) > section:nth-of-type(1):hover > div {
+    opacity: 1;
+}
+
+article:nth-of-type(4) > section:nth-of-type(1) > img {
+    width: 15rem;
+}
 
 /* ARTICLE V */
 /* Carousel */
