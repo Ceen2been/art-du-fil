@@ -70,6 +70,9 @@
         --thin: 1px;
         --thiner: 0.5px;
         --z-index-overlord: 100;
+        --card-size: 14rem;
+        --card-size-dev: 20rem;
+        --card-img-size: 16rem;
 }
 
 * {
@@ -243,14 +246,18 @@ article:nth-of-type(4) {
     position: relative;
 }
 
+#logo-cont {
+    height: var(--card-size);
+}
+
 article:nth-of-type(4) > section > div {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: var(--size-0);
+    left: var(--size-0);
     background-color: var(--charcoal-deep);
-    height: 19rem;
+    height: var(--card-size-dev);
     width: 100%;
-    opacity: 0;
+    opacity: var(--size-0);
     transition: var(--transition-fast);
     display: flex;
     flex-direction: column;
@@ -263,10 +270,53 @@ article:nth-of-type(4) > section > div > p:nth-of-type(2) {
     color: var(--gold-heavy);
 }
 
+#logo-cont > div > div {
+    background-color: var(--charcoal-deep);
+    border: solid var(--thiner);
+    border-color: var(--slate);
+    padding: var(--size-0-5);
+    margin-top: var(--size-1);
+    border-radius: var(--size-0-25);
+}
+
 .title-serv {
     color: var(--gold);
-    font-family: var(--font-body);
+    font-family: var(--font-display);
     font-size: var(--size-1-25);
+}
+
+.title-serv::before, .title-serv::after {
+    content: '+';
+    align-self: center;
+    font-size: var(--size-1-25);
+    margin: var(--size-0) var(--size-1-25);
+}
+
+.line-gold {
+    min-height: var(--thiner);
+    min-width: var(--size-2-5);
+    background-color: var(--gold);
+    margin: var(--size-0-5);
+}
+
+.obj-serv {
+    color: var(--gold-heavy);
+    font-size: var(--size-0-75);
+    letter-spacing: var(--size-0-15);
+    margin-top: var(--size-0-25);
+    background-color: var(--charcoal);
+    padding: var(--size-0-25) var(--size-0-75);
+    border: solid var(--thiner) var(--slate);
+    border-radius: var(--size-0-25);
+    font-family: var(--font-body);
+}
+
+#logo-cont > div > p:last-child {
+    color: var(--charcoal);
+    text-align: center;
+    margin: var(--size-0-5);
+    font-family: var(--font-body);
+    font-size: var(--size-0-75);
 }
 
 article:nth-of-type(4) > section:nth-of-type(1) {
@@ -284,15 +334,15 @@ article:nth-of-type(4) > section:nth-of-type(1) > img {
 }
 
 article:nth-of-type(4) > section:nth-of-type(1):hover > img {
-    opacity: 0;
+    opacity: var(--size-0);
 }
 
 article:nth-of-type(4) > section:nth-of-type(1):hover > div {
-    opacity: 1;
+    opacity: var(--size-1)
 }
 
 article:nth-of-type(4) > section:nth-of-type(1) > img {
-    width: 15rem;
+    width: var(--card-img-size);
 }
 
 /* ARTICLE V */
