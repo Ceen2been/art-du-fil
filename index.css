@@ -427,3 +427,20 @@ body>div:first-of-type {
 
 /* ==== */
 
+/* Before and after */
+
+#ba-cont {
+    position: relative;
+
+}
+
+#ba-cont > div {
+    position: absolute;
+    inset: 0;
+}
+
+#ba-cont > div > img {
+    width: var(--card-img-size);
+    position: absolute;
+    inset: 0;
+}
